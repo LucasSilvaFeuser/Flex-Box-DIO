@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Align Items </title>
+    <style>
+        .container{
+            display: flex;
+            width: 500px;
+            border: 1px solid black;
+        }
+        .item{
+            background-color: purple;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+        .center{
+            align-items: center;
+        }
+        .flex-start{
+            align-items: flex-start;
+        }
+        .flex-end{
+            align-items: flex-end;
+        }
+        .stretch{
+            align-items: stretch;
+        }
+        .baseline{
+            align-items: baseline;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .central{
+            height: 500px;
+            justify-content: center;
+        }
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+        <h1> ROW </h1>
+
+    <h1>Align Items - Center</h1>
+    <div class="container center">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">Eae monark aqui, e bem vindos a mais um video!</div>
+        <div class="item">Dessa vez galerinha.</div>
+        <div class="item">5</div>
+    </div>
+
+    <h1>Align Items - Flex Start</h1>
+    <div class="container flex-start">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">Eae monark aqui, e bem vindos a mais um video!</div>
+        <div class="item">Dessa vez galerinha.</div>
+        <div class="item">5</div>
+    </div>
+
+
+    <h1>Align Items - Flex End</h1>
+    <div class="container flex-end">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">Eae monark aqui, e bem vindos a mais um video!</div>
+        <div class="item">Dessa vez galerinha.</div>
+        <div class="item">5</div>
+    </div>
+
+
+    <h1>Align Items - Stretch </h1>
+    <div class="container stretch">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">Eae monark aqui, e bem vindos a mais um video!</div>
+        <div class="item">Dessa vez galerinha.</div>
+        <div class="item">5</div>
+    </div>
+
+
+    <h1>Align Items - Baseline</h1>
+    <div class="container baseline">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">Eae monark aqui, e bem vindos a mais um video!</div>
+        <div class="item">Dessa vez galerinha.</div>
+        <div class="item">5</div>
+    </div>
+
+    <h1> COLUMN </h1>
+
+    <h1>Align Items - Center - column</h1>
+    <div class="container center column">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">Eae monark aqui, e bem vindos a mais um video!</div>
+        <div class="item">Dessa vez galerinha.</div>
+        <div class="item">5</div>
+    </div>
+
+    <h1>Align Items - Flex Start - column</h1>
+    <div class="container flex-start column">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">Eae monark aqui, e bem vindos a mais um video!</div>
+        <div class="item">Dessa vez galerinha.</div>
+        <div class="item">5</div>
+    </div>
+
+
+    <h1>Align Items - Flex End - column</h1>
+    <div class="container flex-end column">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">Eae monark aqui, e bem vindos a mais um video!</div>
+        <div class="item">Dessa vez galerinha.</div>
+        <div class="item">5</div>
+    </div>
+
+    <!-- Não tratavel -->
+    <h1>Align Items - Stretch - column </h1>
+    <div class="container stretch column" >
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">Eae monark aqui,  a mais um video!</div>
+        <div class="item">Dessa vez galerinha.</div>
+        <div class="item">5</div>
+    </div>
+
+
+    <h1>Align Items - Baseline - column </h1>
+    <div class="container baseline column">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">Eae monark aqui, e bem vindos a mais um video!</div>
+        <div class="item">Dessa vez galerinha.</div>
+        <div class="item">5</div>
+    </div>
+
+    <h1> Alinhamento Central na tela </h1>
+    <div class="container central center">
+        <div class="item">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the Dessadasdassdadasdsadsadasdsadsadas
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the Dessadasdassdadasdsadsadasdsadsadas
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the Dessadasdassdadasdsadsadasdsadsadas
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+
+        </div>
+    </div>
+
+</body>
+</html>

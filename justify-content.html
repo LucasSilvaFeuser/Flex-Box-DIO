@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Justify Content</title>
+    <style>
+        .flex-container{
+            display: flex;
+            max-width: 500px;
+            border: 1px solid black;
+        }
+        .item{
+            background-color: lightgreen;
+            margin: 5px;
+            color: black;
+            margin: 5px;
+            text-align: center;
+        }
+        .start{
+            justify-content: start;
+        }
+        .end{
+            justify-content: end;
+        }
+        .center{
+            justify-content: center;
+        }
+        .space-between{
+            justify-content: space-between;
+        }
+        .space-arround{
+            justify-content: space-around;
+        }
+        .column{
+            flex-direction: column;
+            min-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="margin-left: 50%;"> ROW </h1>
+    <p> Justify Start</p>
+    <section class="flex-container start">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item"> Item </div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </section>
+
+    <p> Justify End</p>
+        <section class="flex-container end">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item"> Item </div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </section>
+
+        <p> Justify Center</p>
+        <section class="flex-container center">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item"> Item </div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </section>
+
+        <p> Justify space-between</p> <!-- Spaço entre eles, e o primeiro e segundo encostado nas pontas do container -->
+        <section class="flex-container space-between">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item"> Item </div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </section>
+
+        <p> Justify Space-Arround</p>
+        <section class="flex-container space-arround"> <!-- Espaço igual entre todos eles, e um espaço igual tambem entre o primeiro e ultimo em cima do container -->
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item"> Item </div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </section>
+
+        <h1 style="margin-left: 50%;"> COLUMN </h1>
+
+        <p> Justify Start - (column)</p>
+        <section class="flex-container start column">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item"> Item </div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </section>
+
+        <p> Justify End - (column)</p>
+        <section class="flex-container end column">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item"> Item </div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </section>
+
+        <p> Justify Center - (column)</p>
+        <section class="flex-container center column">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item"> Item </div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </section>
+
+        <p> Justify Space-Between - (column)</p>
+        <section class="flex-container space-between column">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item"> Item </div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </section>
+
+        <p> Justify Space-Arround - (column)</p>
+        <section class="flex-container space-arround column">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item"> Item </div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </section>
+</body>
+</html>

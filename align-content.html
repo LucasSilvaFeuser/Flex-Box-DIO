@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Align content </title>
+    <style>
+        .container{
+            height: 400px;
+            max-width: 300px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+        .item{
+            background-color: purple;
+            padding: 0 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+            margin: 5px;
+        }
+        .flex-start{
+            align-content: flex-start;
+        }
+        .flex-end{
+            align-content: flex-end;
+        }
+        .center{
+            align-content: center;
+        }
+        .space-around{
+            align-content: space-around;
+        }
+        .space-between{
+            align-content: space-between;
+        }
+        .stretch{
+            align-content: stretch;
+        }
+    </style>
+</head>
+<body>
+    <h1> Align content - Flex Start</h1>
+    <div class="container flex-start">
+        <div class="item">Lorem Ipsum is  text of the printing and typesetting industry. Lorem Ipsum</div>
+        <div class="item">Lorem Ipsum is simply dummy  printing and typesetting industry. Lorem Ipsum</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</div>
+       
+    </div>
+
+    <h1> Align content - Flex End</h1>
+    <div class="container flex-end">
+        <div class="item">Lorem Ipsum is  text of the printing and typesetting industry. Lorem Ipsum</div>
+        <div class="item">Lorem Ipsum is simply dummy  printing and typesetting industry. Lorem Ipsum</div>
+        <div class="item">Lorem Ipsum is simply dummy text of and typesetting industry. Lorem Ipsum</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and . Lorem Ipsum</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</div>
+    </div>
+
+    <h1> Align content - Center</h1>
+    <div class="container center">
+        <div class="item">Lorem Ipsum is  text of the printing and typesetting industry. Lorem Ipsum</div>
+        <div class="item">Lorem Ipsum is simply dummy  printing and typesetting industry. Lorem Ipsum</div>
+        <div class="item">Lorem Ipsum is simply dummy text of and typesetting industry. Lorem Ipsum</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and . Lorem Ipsum</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</div>
+        
+    </div>
+
+    <h1> Align content - Stretch</h1>
+    <div class="container stretch">
+        <div class="item">Lorem Ipsum is  text of the printing and typesetting industry. Lorem Ipsum</div>
+        <div class="item">Lorem Ipsum is simply dummy  printing and typesetting industry. Lorem Ipsum</div>
+        <div class="item">Lorem Ipsum is simply dummy text of and typesetting industry. Lorem Ipsum</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and . Lorem Ipsum</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</div>
+    </div>
+
+    <h1> Align content - Space Around</h1>
+    <h4> O espaço do meio é o dobro dos das pontas</h4>
+    <div class="container space-around">
+        <div class="item">Lorem Ipsum is  text of the printing and typesetting industry. Lorem Ipsum</div>
+        <div class="item">Lorem Ipsum is simply dummy  printing and typesetting industry. Lorem Ipsum</div>
+        <div class="item">Lorem Ipsum is simply dummy text of and typesetting industry. Lorem Ipsum</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and . Lorem Ipsum</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</div>
+    </div>
+
+    <h1> Align content - Space Between</h1>
+    <div class="container space-between">
+        <div class="item">Lorem Ipsum is  text of the printing and typesetting industry. Lorem Ipsum</div>
+        <div class="item">Lorem Ipsum is simply dummy  printing and typesetting industry. Lorem Ipsum</div>
+        <div class="item">Lorem Ipsum is simply dummy text of and typesetting industry. Lorem Ipsum</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and . Lorem Ipsum</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</div>
+    </div>
+</body>
+</html>
