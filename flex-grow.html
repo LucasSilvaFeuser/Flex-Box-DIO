@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Flex-Grow - Tratamento propoção crescimento </title>
+    <style>
+        .container{
+            display: flex;
+            max-width: 300px;
+            border: 1px solid black;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+        .item{
+            background-color: purple;
+            color: white;
+            text-align: center;
+            margin: 5px;
+            padding: 10px;
+        }
+        .fg-0{
+            flex-grow: 0;
+        }
+        .fg-1{
+            flex-grow: 1;
+        }
+        .fg-2{
+            flex-grow: 2;
+        }
+        .fg-3{
+            flex-grow: 3;
+        }
+    </style>
+</head>
+<body>
+    <p>Flex grow :0 ; - com justify-content: center ;</p>
+    <div class="container">
+        <div class="item fg-0">A</div>
+        <div class="item fg-0">B</div>
+        <div class="item fg-0">C</div>
+        <div class="item fg-0">D</div>
+    </div>
+
+    <strong> Flex Grow - Misturados </strong>
+    <div class="container">
+        <div class="item fg-1">A</div>
+        <div class="item fg-1">22222</div>
+        <div class="item fg-1">C</div>
+        <div class="item fg-1">D</div>
+    </div>
+
+    <div class="container">
+        <div class="item fg-2">A</div>
+        <div class="item fg-2">B2222</div>
+        <div class="item fg-2">C</div>
+        <div class="item fg-2">3333</div>
+    </div>
+
+    <div class="container">
+        <div class="item fg-3">A</div>
+        <div class="item fg-3">B</div>
+        <div class="item fg-3">C</div>
+        <div class="item fg-3">444444444444</div>
+    </div>
+</body>
+</html>
