@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Flex na pratica </title>
+    <style>
+        .container{
+            max-width: 500px;
+            border: 2px solid black;
+            display: flex;
+        }
+        .item, .item1, .item2, .item3{
+            margin: 10px;
+            background-color: purple;
+            color: white;
+            font-size: 15px;
+            text-align: center;
+            padding: 5px;
+        }
+        .flex-1{
+            flex: 1;
+        }
+        .flex-0{
+            flex: 0;
+        }
+        .flex-autor{
+            flex: auto;
+        }
+        .flex-2{
+            flex: 2;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .column .item{
+            background-color: red;
+        }
+        .column .item1{
+            background-color: blue;
+        }
+        .column .item2{
+            background-color: orange;
+        }
+        .column .item3{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <p> Flex: 1</p>
+    <div class="container">
+        <div class="item flex-1">AAA</div>
+        <div class="item flex-1">BB</div>
+        <div class="item flex-1">CCDE</div>
+        <div class="item flex-1">FFFGH</div>
+        <div class="item flex-1">IJKLM</div>
+    </div>
+
+    <p> Flex: 2</p>
+    <div class="container column">
+        <div class="item2 flex-2">AAA</div>
+        <div class="item3 flex-2">BB</div>
+        <div class="item1 flex-2">CCDE</div>
+        <div class="item2 flex-2">FFFGH</div>
+        <div class="item flex-2">IJKLM</div>
+    </div>
+
+    <p> Flex: 0</p>
+    <div class="container">
+        <div class="item flex-0">AAA</div>
+        <div class="item flex-0">BB</div>
+        <div class="item flex-0">CCDE</div>
+        <div class="item flex-0">FFFGH</div>
+        <div class="item flex-0">IJKLM</div>
+    </div>
+
+    <p> Flex: MIX</p>
+    <div class="container">
+        <div class="item flex-1">AAA</div>
+        <div class="item flex-0">BB</div>
+        <div class="item flex-2">CCDE</div>
+        <div class="item flex-1">FFFGH</div>
+        <div class="item flex-0">IJKLM</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Ordem </title>
+    <style>
+        .container{
+            display: flex;
+            max-width: 400px;
+            border: 1px solid black;
+            margin-bottom: 20px;
+        }
+        .item{
+            background-color: purple;
+            color: white;
+            text-align: center;
+            margin: 5px;
+            flex: 1;
+        }
+        .o1{
+            order: 1;
+        }
+        .o2{
+            order: 2;
+        }
+        .o3{
+            order:3;
+        }
+        .o4{
+            order: 4;
+        }
+        .direction{
+            flex-direction: column;
+        }
+        .o-1{
+            order: -1;
+        }
+        .o-2{
+            order: -2;
+        }
+        .o-3{
+            order: -3;
+            background-color: red;
+        }
+        .o-4{
+            order: -4;
+        }
+        .o-5{
+            order: -5;
+        }
+        .reverse{
+            flex-direction: row-reverse;
+        }
+        .wrap{
+            flex-wrap: wrap;
+        }
+        .ot-faw .item{
+            flex: 0;
+            min-width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <p> ORDER : 0</p>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+
+    <p> ORDER MIX</p>
+    <div class="container">
+        <div class="item o3">1</div>
+        <div class="item o1">2</div>
+        <div class="item o4">3</div>
+        <div class="item o2">4</div>
+        <div class="item o3">5</div>
+    </div>
+
+    <h1> MODO COLUMN</h1>
+    <p> ORDER : 0</p>
+    <div class="container direction">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+
+    <p> ORDER MIX</p>
+    <div class="container direction">
+        <div class="item o3">1</div>
+        <div class="item o1">2</div>
+        <div class="item o4">3</div>
+        <div class="item o2">4</div>
+        <div class="item o3">5</div>
+    </div>
+
+    <h1> ORDER NEGATIVADO</h1>
+    <p> ORDER COLUMN</p>
+    <div class="container direction">
+        <div class="item o-1">1</div>
+        <div class="item o-3">2</div>
+        <div class="item o-2">3</div>
+        <div class="item o-5">4</div>
+        <div class="item o-4">5</div>
+    </div>
+
+    <p> ORDER ROW</p>
+    <div class="container">
+        <div class="item o-5">1</div>
+        <div class="item o-1">2</div>
+        <div class="item o-4">3</div>
+        <div class="item o-2">4</div>
+        <div class="item o-3">5</div>
+    </div>
+
+    <p> ORDER ROW-REVERSER</p>
+    <div class="container reverse wrap">
+        <div class="item ot-faw o-3">1</div>
+        <div class="item ot-faw">2</div>
+        <div class="item ot-faw o-3">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw o-3">5</div>
+        <div class="item ot-faw o-3">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div>
+        <div class="item ot-faw">2</div>
+        <div class="item ot-faw o-3">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div>
+        <div class="item ot-faw">2</div>
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div>
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div>
+        <div class="item ot-faw">2</div>
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div>
+        <div class="item ot-faw">2</div>
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div> <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div>
+        <div class="item ot-faw">2</div>
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div>
+        <div class="item ot-faw">2</div>
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div> <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div>
+        <div class="item ot-faw">2</div>
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div>
+        <div class="item ot-faw">2</div>
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div> <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div>
+        <div class="item ot-faw">2</div>
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div>
+        <div class="item ot-faw">2</div>
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div> <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div>
+        <div class="item ot-faw">2</div>
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div>
+        <div class="item ot-faw">2</div>
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div> <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div>
+        <div class="item ot-faw">2</div>
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div>
+        <div class="item ot-faw">2</div>
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div> <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div>
+        <div class="item ot-faw">2</div>
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div>
+        <div class="item ot-faw">2</div>
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div> <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div>
+        <div class="item ot-faw">2</div>
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div>
+        <div class="item ot-faw">2</div>
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div> <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div>
+        <div class="item ot-faw">2</div>
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div>
+        <div class="item ot-faw">2</div>
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div> <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div>
+        <div class="item ot-faw">2</div>
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div>
+        <div class="item ot-faw">2</div>
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div> 
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div>
+        <div class="item ot-faw">2</div>
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div>
+        <div class="item ot-faw">2</div>
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div> 
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div>
+        <div class="item ot-faw">2</div>
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div>
+        <div class="item ot-faw">2</div>
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div> 
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div>
+        <div class="item ot-faw">2</div>
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div>
+        <div class="item ot-faw">2</div>
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div> 
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div>
+        <div class="item ot-faw">2</div>
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div>
+        <div class="item ot-faw">2</div>
+        <div class="item ot-faw">3</div>
+        <div class="item ot-faw">4</div>
+        <div class="item ot-faw">5</div>
+        <div class="item ot-faw">6</div>
+        <div class="item ot-faw">7</div>
+        <div class="item ot-faw">8</div>
+        <div class="item ot-faw">9</div>
+
+
+    </div>
+</body>
+</html>
